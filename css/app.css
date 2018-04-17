@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	text-align: center;
+	background-color: rgb(233, 246, 251);
+	width: 100%;
+}
+
+table {
+	margin: 3rem auto 0 auto;
+	cursor: pointer;
+	user-select: none;
+	width: 100%;
+	max-width: 700px;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle;
+	width: 25%;
+}
+
+div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	max-width: 100px;
+	height: 116px;
+}
+
+img {
+	position: absolute;
+	display: block;
+}
+
+.hole-top {
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.hole-bottom {
+	top: 16px;
+	left: 0;
+	z-index: 3;
+}
+
+.telegram {
+	left: 20%;
+	z-index: 2;
+	transition: top 0.3s;
+	cursor: not-allowed;
+}
+
+.telegram.hidden {
+	top: 32px;
+}
+
+.telegram.visible {
+	top: -27px;
+}
+
+footer {
+	text-align: center;
+	margin: -2em 0 1.5em 0;
+	font-size: 16px;
+	opacity: 0.25;
+	transition: opacity 1s;
+}
+
+footer:hover {
+	opacity: 1;
+}
+p {
+	line-height: 2.5;
+}
+.rkn-logo {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	background: url('../img/roscomnadzor.svg') no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 19px;
+}
+.tlg-logo {display: inline-block;
+	width: 48px;
+	height: 48px;
+	background: url('../img/telegram.png') no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 19px;
+}
